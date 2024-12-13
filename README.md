@@ -392,7 +392,7 @@ Durante o desenvolvimento deste projeto, tivemos várias oportunidades de aprend
 - **Desenvolvimento de Habilidades Técnicas**: Aprendemos a programar em C com mais profundidade, incluindo como estruturar código, criar funções reutilizáveis e implementar validações eficazes. Essas habilidades serão valiosas não apenas neste projeto, mas em nossa futura carreira na área de tecnologia.
 - **Colaboração e Trabalho em Equipe**: O trabalho em grupo nos ensinou sobre como todas as atividades que aprendemos na matéria de fundamentos de engenharia de software fizeram sentido. Cada membro teve a oportunidade de se especializar em diferentes partes do sistema, mas também precisávamos garantir que tudo funcionasse bem junto. O que as vezes nos trouxe bastante dificuldade, mas tenho certeza que vai nós agregar muito no futuro. A comunicação foi a parte essencial do nosso projeto, se não não teria dado certo.
 - **Importância dos Testes**: Compreendemos melhor como os testes são essenciais para garantir que o software funcione conforme esperado. Criar casos de teste nos ajudou a pensar criticamente sobre como cada parte do sistema deve se comportar.
-- 
+
 ## Conclusão
 
 O desenvolvimento do sistema para a **Voo Seguro** não apenas nos proporcionou uma experiência prática valiosa no campo da programação e engenharia de software, mas também nos fez refletir sobre os desafios reais enfrentados por empresas no dia a dia. Através desse trabalho, aprendemos sobre como se comunicar e a valorizar mais oque aprendemos. Estamos confiantes de que este projeto também nos preparará melhor para futuros desafios na nossa jornada acadêmica e profissional.
