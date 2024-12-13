@@ -10,7 +10,7 @@
 <img src = "https://github.com/user-attachments/assets/58467434-67b1-4cfc-8cbf-e8b4f565a894" width="500px" height="600px">
 </div>
 
-## Vídeo de apresentação: **(A ser colocado)**
+## Vídeo de apresentação: **Link: https://youtu.be/mQimotNBSVU**
 
 ## 1. Introdução 
 
