@@ -382,7 +382,7 @@ Esses problemas não apenas afetam a operação diária da Voo Seguro, mas tamb�
 
 ## 2. Solução Proposta
 
-O sistema que estamos desenvolvendo tem como objetivo resolver esses desafios ao centralizar todas as informações sobre voos, assentos, passageiros e tripulação em uma plataforma única e de fácil acesso, implementando validações rigorosas para garantir que não haja reservas duplicadas e que todos os dados sejam precisos e válidos, além de aprimorar a comunicação entre os membros da tripulação, permitindo que cada um tenha acesso rápido e claro às informações essenciais para a operação de cada voo, tudo isso para garantir uma operação mais eficiente, sem erros e com maior integração.
+O sistema que estamos desenvolvendo tem como objetivo resolver esses desafios ao centralizar todas as informações sobre voos, assentos, passageiros e tripulação em uma plataforma única e de fácil acesso, implementando validações bem especificas para garantir que não haja reservas duplicadas e que todos os dados sejam precisos e válidos, e claro, ajudar os membros da tripulação a se comunicarem e terem um desempenho melhor, permitindo que cada um tenha um acesso rápido às informações essenciais para a operação de cada voo, tudo isso para garantir uma operação mais eficiente, sem erros e com maior integração. by: TOPFLY
 
 ## 3. Aprendizados Durante o Trabalho
 
