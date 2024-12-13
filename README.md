@@ -211,8 +211,6 @@ Backlog do produto:
 
 # Casos de Teste
 
-# Casos de Teste - Sistema de Gerenciamento de Voos
-
 ## Caso de Teste: Cadastro de Passageiro
 
 | ID do Caso de Teste | Descrição                                | Pré-condições        | Passos para Execução                                  | Resultado Esperado                        |
