@@ -49,190 +49,165 @@ Backlog do produto:
 
 ## Lista de assinaturas das funções e paramêtros
 
-### **`void limparBuffer()`**
-- **Assinatura:** `void limparBuffer()`
-- **Parâmetros:** Nenhum.
-- **Descrição:**  
-  Limpa o buffer de entrada para evitar que entradas anteriores interfiram nas próximas leituras.  
-  Utiliza um loop para ler caracteres até encontrar uma nova linha ou o final do arquivo.
+## Estruturas de Dados Principais
+
+- **Reserva**: Representa uma reserva de assento vinculada a um voo e passageiro.
+- **Assento**: Define os assentos de um voo, indicando se estão ocupados.
+- **Voo**: Armazena informações como código, origem, destino, data, hora e tarifa do voo.
+- **Tripulante**: Representa a equipe de bordo, incluindo pilotos, copilotos e comissários.
+- **Passageiro**: Detalha informações pessoais e status de fidelidade dos passageiros.
 
 ---
 
-### **`void capturarTexto(const char *mensagem, char *saida, int tamanho)`**
-- **Assinatura:** `void capturarTexto(const char *mensagem, char *saida, int tamanho)`
-- **Parâmetros:**
-  - `const char *mensagem`: Mensagem exibida ao usuário.
-  - `char *saida`: Ponteiro onde a entrada válida será armazenada.
-  - `int tamanho`: Tamanho máximo da string a ser capturada.
-- **Descrição:**  
-  Captura uma string do usuário removendo espaços em branco extras. Utiliza um buffer temporário para armazenar a entrada antes de processá-la.
+## Lista de Funções
+
+### Funções Gerais
+
+#### `void limparBuffer()`
+- **Descrição**: Limpa o buffer de entrada para evitar problemas ao ler dados do usuário.
+- **Parâmetros**: Nenhum.
+- **Retorno**: Nenhum.
+
+#### `void capturarTexto(const char *mensagem, char *saida, int tamanho)`
+- **Descrição**: Lê uma string do usuário, remove espaços extras e valida a entrada.
+- **Parâmetros**:
+  - `mensagem`: Mensagem exibida ao usuário.
+  - `saida`: Buffer onde a entrada será armazenada.
+  - `tamanho`: Tamanho máximo permitido para a entrada.
+- **Retorno**: Nenhum.
+
+#### `int validarData(const char *data)`
+- **Descrição**: Valida uma data no formato `DD/MM/AAAA`.
+- **Parâmetros**:
+  - `data`: String representando a data a ser validada.
+- **Retorno**: 1 se a data for válida, 0 caso contrário.
+
+#### `int validarHora(const char *hora)`
+- **Descrição**: Valida uma hora no formato `HH:MM`.
+- **Parâmetros**:
+  - `hora`: String representando a hora a ser validada.
+- **Retorno**: 1 se a hora for válida, 0 caso contrário.
 
 ---
 
-### **`int validarData(const char *data)`**
-- **Assinatura:** `int validarData(const char *data)`
-- **Parâmetros:**
-  - `const char *data`: String representando a data a ser validada.
-- **Descrição:**  
-  Valida se uma data está no formato `DD/MM/AAAA`.  
-  Verifica o comprimento da string e a validade dos valores de dia, mês e ano.
+### Gerenciamento de Voos
+
+#### `int buscarVoo(const char *codigoVoo)`
+- **Descrição**: Busca um voo pelo código fornecido.
+- **Parâmetros**:
+  - `codigoVoo`: Código do voo a ser buscado.
+- **Retorno**: Índice do voo encontrado ou -1 se não existir.
+
+#### `void cadastrarVoo()`
+- **Descrição**: Cadastra um novo voo solicitando as informações necessárias ao usuário.
+- **Parâmetros**: Nenhum.
+- **Retorno**: Nenhum.
+
+#### `void listarVoos()`
+- **Descrição**: Exibe todos os voos cadastrados com seus detalhes.
+- **Parâmetros**: Nenhum.
+- **Retorno**: Nenhum.
 
 ---
 
-### **`int validarHora(const char *hora)`**
-- **Assinatura:** `int validarHora(const char *hora)`
-- **Parâmetros:**
-  - `const char *hora`: String representando a hora a ser validada.
-- **Descrição:**  
-  Valida se uma hora está no formato `HH:MM`.  
-  Verifica o comprimento da string e os limites válidos para horas e minutos.
+### Gerenciamento de Assentos
+
+#### `void cadastrarAssento()`
+- **Descrição**: Cadastra assentos para um voo existente.
+- **Parâmetros**: Nenhum.
+- **Retorno**: Nenhum.
+
+#### `void listarAssentos()`
+- **Descrição**: Lista todos os assentos cadastrados, indicando se estão ocupados ou livres.
+- **Parâmetros**: Nenhum.
+- **Retorno**: Nenhum.
 
 ---
 
-### **`int buscarVoo(const char *codigoVoo)`**
-- **Assinatura:** `int buscarVoo(const char *codigoVoo)`
-- **Parâmetros:**
-  - `const char *codigoVoo`: Código do voo que se deseja buscar.
-- **Descrição:**  
-  Percorre todos os voos cadastrados em busca do código fornecido.  
-  Retorna o índice do voo se encontrado ou `-1` se não encontrado.
+### Gerenciamento de Passageiros
+
+#### `Passageiro lerPassageiro()`
+- **Descrição**: Lê e valida as informações fornecidas pelo usuário para criar um novo passageiro.
+- **Parâmetros**: Nenhum.
+- **Retorno**: Estrutura `Passageiro` preenchida.
+
+#### `int cadastrar_passageiro(Passageiro p)`
+- **Descrição**: Cadastra um passageiro no sistema.
+- **Parâmetros**:
+  - `p`: Estrutura contendo os dados do passageiro.
+- **Retorno**: 1 em caso de sucesso, 0 se houver falha (por exemplo, limite atingido).
+
+#### `void listar_passageiros()`
+- **Descrição**: Exibe todos os passageiros cadastrados com suas informações.
+- **Parâmetros**: Nenhum.
+- **Retorno**: Nenhum.
 
 ---
 
-## Funções de Cadastro
+### Gerenciamento de Tripulantes
 
-### **`void cadastrarVoo()`**
-- **Assinatura:** `void cadastrarVoo()`
-- **Parâmetros:** Nenhum.
-- **Descrição:**  
-  Cadastra um novo voo no sistema após verificar se o número máximo de voos foi atingido.  
-  Solicita informações como código do voo, origem, destino, data, hora, códigos dos tripulantes e tarifa.  
-  Realiza validações para garantir que os dados são válidos antes de armazená-los.
+#### `int cadastrar_tripulante(char nome[], char cargo[], char telefone[])`
+- **Descrição**: Valida e cadastra um novo tripulante.
+- **Parâmetros**:
+  - `nome`: Nome do tripulante.
+  - `cargo`: Cargo (piloto, copiloto, comissário).
+  - `telefone`: Telefone de contato.
+- **Retorno**: 1 em caso de sucesso, 0 se os dados forem inválidos.
 
----
-
-### **`void listarVoos()`**
-- **Assinatura:** `void listarVoos()`
-- **Parâmetros:** Nenhum.
-- **Descrição:**  
-  Lista todos os voos cadastrados no sistema.  
-  Se não houver voos cadastrados, informa ao usuário; caso contrário, imprime as informações relevantes de cada voo.
+#### `void list_trip()`
+- **Descrição**: Lista todos os tripulantes cadastrados.
+- **Parâmetros**: Nenhum.
+- **Retorno**: Nenhum.
 
 ---
 
-### **`void cadastrarAssento()`**
-- **Assinatura:** `void cadastrarAssento()`
-- **Parâmetros:** Nenhum.
-- **Descrição:**  
-  Cadastra um novo assento para um voo existente.  
-  Solicita o código do voo e verifica se ele existe antes de solicitar o número do assento.  
-  Realiza validações para garantir que o assento não esteja ocupado ou fora dos limites válidos.
+### Reservas
+
+#### `int reservar_assento()`
+- **Descrição**: Realiza uma reserva vinculando passageiro, voo e assento disponível.
+- **Parâmetros**: Nenhum.
+- **Retorno**: 1 se a reserva for bem-sucedida, 0 caso contrário.
+
+#### `void exibir_reservas()`
+- **Descrição**: Lista todas as reservas realizadas, incluindo detalhes do passageiro e assento.
+- **Parâmetros**: Nenhum.
+- **Retorno**: Nenhum.
+
+#### `int baixar_reserva()`
+- **Descrição**: Libera um assento previamente reservado.
+- **Parâmetros**: Nenhum.
+- **Retorno**: 1 em caso de sucesso, 0 caso contrário.
 
 ---
 
-### **`void listarAssentos()`**
-- **Assinatura:** `void listarAssentos()`
-- **Parâmetros:** Nenhum.
-- **Descrição:**  
-  Lista todos os assentos cadastrados no sistema.  
-  Se não houver assentos cadastrados, informa ao usuário; caso contrário, imprime as informações dos assentos junto com seu status (livre ou ocupado).
+### Fidelidade
+
+#### `void acumularPontosFidelidade(int codigo_passageiro, int pontos)`
+- **Descrição**: Adiciona pontos ao programa de fidelidade de um passageiro fidelizado.
+- **Parâmetros**:
+  - `codigo_passageiro`: Código do passageiro.
+  - `pontos`: Pontuação a ser adicionada.
+- **Retorno**: Nenhum.
+
+#### `void exibirPontosFidelidade()`
+- **Descrição**: Mostra o status de fidelidade e os pontos acumulados de um passageiro.
+- **Parâmetros**: Nenhum.
+- **Retorno**: Nenhum.
 
 ---
 
-## Funções Relacionadas a Tripulantes
+### Pesquisa
 
-### **`int VerificarOcargos(char cargo[])`**
-- **Assinatura:** `int VerificarOcargos(char cargo[])`
-- **Parâmetros:**
-  - `char cargo[]`: String representando o cargo a ser verificado.
-- **Descrição:**  
-  Verifica se o cargo informado é válido (`piloto`, `copiloto` ou `comissário`).  
-  Retorna `1` se for válido; caso contrário, imprime os cargos válidos e retorna `0`.
+#### `void pesquisar_pessoa()`
+- **Descrição**: Permite buscar passageiros ou tripulantes pelo nome ou código.
+- **Parâmetros**: Nenhum.
+- **Retorno**: Nenhum.
 
 ---
 
-### **`int validar_nome(char nome[])`**
-- **Assinatura:** `int validar_nome(char nome[])`
-- **Parâmetros:**
-  - `char nome[]`: String representando o nome a ser validado.
-- **Descrição:**  
-  Valida se o nome contém apenas letras e espaços sem exceder 49 caracteres.  
-  Retorna `1` se válido; caso contrário, retorna `0`.
-
----
-
-### **`int validar_telefone(char telefone[])`**
-- **Assinatura:** `int validar_telefone(char telefone[])`
-- **Parâmetros:**
-  - `char telefone[]`: String representando o telefone a ser validado.
-- **Descrição:**  
-  Valida se o telefone contém apenas números e está dentro dos limites de comprimento definidos (8 a 14 caracteres).  
-  Retorna `1` se válido; caso contrário, retorna `0`.
-
----
-
-### **`int cadastrar_tripulante(char nome[], char cargo[], char telefone[])`**
-- **Assinatura:** `int cadastrar_tripulante(char nome[], char cargo[], char telefone[])`
-- **Parâmetros:**
-  - `char nome[]`: Nome do tripulante.
-  - `char cargo[]`: Cargo do tripulante.
-  - `char telefone[]`: Telefone de contato do tripulante.
-- **Descrição:**  
-  Cadastra um novo tripulante no sistema após verificar se o limite máximo foi atingido.  
-  Realiza validações para garantir que as informações estão corretas antes de armazená-las.
-
----
-
-### **`void list_trip()`**
-- **Assinatura:** `void list_trip()`
-- **Parâmetros:** Nenhum.
-- **Descrição:**  
-  Lista todos os tripulantes cadastrados no sistema.  
-  Se não houver tripulantes cadastrados, informa ao usuário; caso contrário, imprime as informações relevantes de cada tripulante.
-
----
-
-## Funções Relacionadas a Passageiros
-
-### **`Passageiro lerPassageiro()`**
-- **Assinatura:** `Passageiro lerPassageiro()`
-- **Parâmetros:** Nenhum.
-- **Descrição:**  
-  Lê os dados de um passageiro e retorna uma estrutura preenchida com essas informações.  
-  Solicita informações como nome, telefone e endereço com validações em cada etapa.
-
----
-
-### **`int validarEspacosEmBranco(char str[])`**
-- **Assinatura:** `int validarEspacosEmBranco(char str[])`
-- **Parâmetros:**
-  - `char str[]`: String a ser verificada.
-- **Descrição:**  
-  Verifica se uma string contém apenas espaços em branco.  
-  Retorna `1` se for composta apenas por espaços; caso contrário, retorna `0`.
-
----
-
-### **`int validarNome(char nome[])`**
-- **Assinatura:** `int validarNome(char nome[])`
-- **Parâmetros:**
-  - `char nome[]`: Nome do passageiro a ser validado.
-- **Descrição:**  
-  Valida se o nome contém apenas caracteres permitidos (letras e espaços).  
-  Retorna `1` se válido; caso contrário, retorna `0`.
-
----
-
-### **`int validarTelefone(char telefone[])`**
-- **Assinatura:** `int validarTelefone(char telefone[])`
-- **Parâmetros:**
-  - `char telefone[]`: Telefone do passageiro a ser validado.
-- **Descrição:**  
-  Valida se o telefone contém apenas números.  
-  Retorna `1` se válido; caso contrário, retorna `0`.
-
-
-  **Futuramente será implementando mais funcionalidades e será documentado a lista de assinatura e paramêtros tudo aqui.
+## Como Usar
+1. Compile o programa utilizando um compilador C.
+2. Execute o programa e siga as instruções do menu interativo.
 
 # Casos de Teste
 
