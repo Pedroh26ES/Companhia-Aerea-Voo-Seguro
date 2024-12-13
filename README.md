@@ -28,24 +28,21 @@ Backlog do produto:
 
 ### SPRINT 2: (2 DIAS) ÍNICIO: 03/12/2024 FIM 05/12/2024  
 
- 
-
+ <div align="center">
  <img src = "https://github.com/user-attachments/assets/0b2a0c07-d4a9-408a-aa82-95182f9ece50">
-
- 
-
- 
+ </div>
 
 ### SPRINT 3: (A ser Definido) 
 
-  
-<img src = "" >
- 
+ <div align="center">
+<img src = "https://github.com/user-attachments/assets/ee0754e6-0850-4d5d-abb9-83915487cf7e" >
+ </div>
 
 ### SPRINT 4: (A ser Definido) 
 
- <img src = "" >
-
+ <div align="center">
+ <img src = "https://github.com/user-attachments/assets/55eb7bea-4a9e-4bc7-b2b2-050d9137f337" >
+ </div>
  
 
 # Documentação das Funções
