@@ -1,7 +1,8 @@
 # Trabalho Interdisciplinar - Companhia Aérea Voo Seguro | TOPFLY
 ### Pontifícia Universidade Católica de Minas Gerais 
 ### Unidade - Coração Eucarístico
-### Desenvolvedores: Pedro Henrique Roldão, Joao Vitor Russo, Bryan Breder, Davi Nunes
+### Desenvolvedores: Pedro Henrique Roldão, Joao Vitor Russo, Brian Breder, Davi Nunes
+### Nome do Nosso Projeto: TOP FLY
 
 <div align="center">
 <img src = "https://github.com/user-attachments/assets/58467434-67b1-4cfc-8cbf-e8b4f565a894" width="500px" height="600px">
