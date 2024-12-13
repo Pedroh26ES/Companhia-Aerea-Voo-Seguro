@@ -211,6 +211,160 @@ Backlog do produto:
 
 # Casos de Teste
 
+# Casos de Teste - Sistema de Gerenciamento de Voos
+
+## Caso de Teste: Cadastro de Passageiro
+
+| ID do Caso de Teste | Descrição                                | Pré-condições        | Passos para Execução                                  | Resultado Esperado                        |
+|---------------------|------------------------------------------|----------------------|-------------------------------------------------------|-------------------------------------------|
+| TC01                | Cadastro de um novo passageiro           | Nenhuma              | 1. Digite o número 5 para acessar o módulo de cadastro de passageiros e depois digite 1 para começar o cadastro. <br> 2. Preencha todos os dados corretamente, nome do passageiro, endereço, telefone, pontos de fideldade e etc.. <br> 3. Após isso clique enter para cadastrar o passageiro. | Passageiro cadastrado com sucesso.         |
+
+## Caso de Teste: Listagem de Passageiros
+
+| ID do Caso de Teste | Descrição                                | Pré-condições        | Passos para Execução                                  | Resultado Esperado                        |
+|---------------------|------------------------------------------|----------------------|-------------------------------------------------------|-------------------------------------------|
+| TC02                | Listagem de todos os passageiros         | Passageiros cadastrados | 1. Digite o número 5 para acessar o módulo de passageiro e depois digite o número 3 para listar todos os passageiros que já foram cadastrados. <br> 2. Verificar a lista exibida. | A lista de passageiros é exibida corretamente. |
+
+## Caso de Teste: Cadastro de Tripulante
+
+| ID do Caso de Teste | Descrição                                | Pré-condições        | Passos para Execução                                  | Resultado Esperado                        |
+|---------------------|------------------------------------------|----------------------|-------------------------------------------------------|-------------------------------------------|
+| TC03                | Cadastro de um novo tripulante           | Nenhuma              | 1. Digite 5 para acessar o módulo de cadastro de tripulantes. <br> 2. Preencher dados como nome, cargo (piloto, comissario ou copiloto) e digitar o número de telefone. <br> 3. Digite enter para completar o cadastro. | Tripulante cadastrado com sucesso.        |
+
+## Caso de Teste: Listagem de Tripulantes
+
+| ID do Caso de Teste | Descrição                                | Pré-condições        | Passos para Execução                                  | Resultado Esperado                        |
+|---------------------|------------------------------------------|----------------------|-------------------------------------------------------|-------------------------------------------|
+| TC04                | Listagem de todos os tripulantes         | Tripulantes cadastrados | 1. Digite o número 5 para acessar a tela de listagem de tripulantes. Depois, digite o número 4 para listar os tripulantes que já foram cadastrados. <br> 2. Verificar a lista exibida. | A lista de tripulantes é exibida corretamente. |
+
+## Caso de Teste: Cadastro de Voo
+
+| ID do Caso de Teste | Descrição                                | Pré-condições        | Passos para Execução                                  | Resultado Esperado                        |
+|---------------------|------------------------------------------|----------------------|-------------------------------------------------------|-------------------------------------------|
+| TC05                | Cadastro de um novo voo                  | Nenhuma              | 1. Digite 1 para acessar o módulo de cadastro de voos. <br> 2. Preencha os dados do voo, como código do voo, origem do voo, destino do voo, data do voo, hora do voo, e etc... <br> 3. Enviar e verificar o cadastro. | Voo cadastrado com sucesso.               |
+
+## Caso de Teste: Listagem de Voos
+
+| ID do Caso de Teste | Descrição                                | Pré-condições        | Passos para Execução                                  | Resultado Esperado                        |
+|---------------------|------------------------------------------|----------------------|-------------------------------------------------------|-------------------------------------------|
+| TC06                | Listagem de todos os voos                | Voos cadastrados     | 1. Digite 4 para acessar a tela de listagem de voos. <br> 2. Verificar a lista de voos exibida. | A lista de voos será exibida corretamente.   |
+
+
+## Caso de Teste: Cadastro de Assentos
+
+| ID do Caso de Teste | Descrição                                | Pré-condições        | Passos para Execução                                  | Resultado Esperado                        |
+|---------------------|------------------------------------------|----------------------|-------------------------------------------------------|-------------------------------------------|
+| TC07                | Cadastro de assentos para voo            | Voo cadastrado       | 1. Digite o número 2 para acessar a tela de cadastro de assentos. <br> 2. Preencha o dado do voo. (Observação: O Voo já tem que ter sido cadastro anteriormente.) <br> 3. Submeta e Verifique os dados do formulário. | Assento cadastrado com sucesso.           |
+
+## Caso de Teste: Cadastro de Reserva de Passageiro
+
+| ID do Caso de Teste | Descrição                                | Pré-condições        | Passos para Execução                                  | Resultado Esperado                        |
+|---------------------|------------------------------------------|----------------------|-------------------------------------------------------|-------------------------------------------|
+| TC08                | Realizar reserva de passageiro para voo  | Passageiro e voo cadastrados | 1. Digite o número 6 para acessar o módulo de reservas. <br> 2. Preencha com o código do passageiro. (Observação: O Passageiro já tem que ter sido cadastrado) <br> 3. Confirmar a sua reserva. | Reserva realizada com sucesso.            |
+
+# Casos de Teste - Validação de Entrada
+
+## Caso de Teste 8: Testar Nome com Números
+
+| ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
+|---------------------|---------------------------------|------------|--------------------|----------------------|
+| TC09                | Validar se o nome contém apenas letras e espaços | "João123"  | O programa deve retornar um erro dizendo "Nome inválido! Apenas letras e espaços são permitidos." e pedir para inserir novamente. | 1. Inserir "João123" como nome. <br> 2. Verificar a mensagem de erro exibida. |
+
+## Caso de Teste 9: Testar País com Números
+
+| ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
+|---------------------|---------------------------------|------------|--------------------|----------------------|
+| TC10                | Validar se o país contém apenas letras e espaços | "Brasil123" | O programa deve retornar um erro dizendo "País inválido! Apenas letras e espaços são permitidos." e pedir para inserir novamente. | 1. Inserir "Brasil123" como país. <br> 2. Verificar a mensagem de erro exibida. |
+
+## Caso de Teste 10: Testar País com Caracteres Especiais
+
+| ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
+|---------------------|---------------------------------|------------|--------------------|----------------------|
+| TC11                | Validar se o país contém apenas letras e espaços | "Br@sil"    | O programa deve retornar um erro dizendo "País inválido! Apenas letras e espaços são permitidos." e pedir para inserir novamente. | 1. Inserir "Br@sil" como país. <br> 2. Verificar a mensagem de erro exibida. |
+
+## Caso de Teste 11: Testar Cidade com Números
+
+| ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
+|---------------------|---------------------------------|------------|--------------------|----------------------|
+| TC12                | Validar se a cidade contém apenas letras e espaços | "São Paulo 123" | O programa deve retornar um erro dizendo "Cidade inválida! Apenas letras e espaços são permitidos." e pedir para inserir novamente. | 1. Inserir "São Paulo 123" como cidade. <br> 2. Verificar a mensagem de erro exibida. |
+
+## Caso de Teste 12: Testar Rua com Apenas Letras
+
+| ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
+|---------------------|---------------------------------|------------|--------------------|----------------------|
+| TC13                | Validar se a rua contém letras e números | "Rua A"     | O programa deve retornar um erro dizendo "Rua inválida! A rua deve conter números e letras." e pedir para inserir novamente. | 1. Inserir "Rua A" como rua. <br> 2. Verificar a mensagem de erro exibida. |
+
+## Caso de Teste 13: Testar Número de Casa Negativo
+
+| ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
+|---------------------|---------------------------------|------------|--------------------|----------------------|
+| TC14                | Validar se o número da casa é positivo | "-10"      | O programa deve retornar um erro dizendo "Número da casa inválido! O número deve ser positivo." e pedir para inserir novamente. | 1. Inserir "-10" como número da casa. <br> 2. Verificar a mensagem de erro exibida. |
+
+## Caso de Teste 14: Testar Número de Casa com Letras
+
+| ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
+|---------------------|---------------------------------|------------|--------------------|----------------------|
+| TC15                | Validar se o número da casa contém apenas números | "10A"      | O programa deve retornar um erro dizendo "Número da casa inválido! O número deve ser positivo." e pedir para inserir novamente. | 1. Inserir "10A" como número da casa. <br> 2. Verificar a mensagem de erro exibida. |
+
+## Caso de Teste 15: Testar Telefone com Letras
+
+| ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
+|---------------------|---------------------------------|------------|--------------------|----------------------|
+| TC16                | Validar se o telefone contém apenas números | "123AB45678" | O programa deve retornar um erro dizendo "Telefone inválido! Apenas números são permitidos." e pedir para inserir novamente. | 1. Inserir "123AB45678" como telefone. <br> 2. Verificar a mensagem de erro exibida. |
+
+## Caso de Teste 16: Testar Telefone com Número Negativo
+
+| ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
+|---------------------|---------------------------------|------------|--------------------|----------------------|
+| TC17                | Validar se o telefone contém apenas números positivos | "-123456789" | O programa deve retornar um erro dizendo "Telefone inválido! Apenas números são permitidos." e pedir para inserir novamente. | 1. Inserir "-123456789" como telefone. <br> 2. Verificar a mensagem de erro exibida. |
+
+## Caso de Teste 17: Testar Fidelidade com Resposta Errada
+
+| ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
+|---------------------|---------------------------------|------------|--------------------|----------------------|
+| TC18                | Validar se a resposta de fidelidade é "S" ou "N" | "X"        | O programa deve retornar um erro dizendo "Entrada inválida! Digite apenas 'S' ou 'N'." e pedir para inserir novamente. | 1. Inserir "X" como resposta de fidelidade. <br> 2. Verificar a mensagem de erro exibida. |
+
+## Caso de Teste 18: Testar Pontos de Fidelidade Negativos
+
+| ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
+|---------------------|---------------------------------|------------|--------------------|----------------------|
+| TC19                | Validar se os pontos de fidelidade são números não negativos | "-10"      | O programa deve retornar um erro dizendo "Pontos inválidos! Apenas números não negativos são permitidos." e pedir para inserir novamente. | 1. Inserir "-10" como pontos de fidelidade. <br> 2. Verificar a mensagem de erro exibida. |
+
+## Caso de Teste 19: Testar Pontos de Fidelidade com Letras
+
+| ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
+|---------------------|---------------------------------|------------|--------------------|----------------------|
+| TC20                | Validar se os pontos de fidelidade são números | "dez"       | O programa deve retornar um erro dizendo "Pontos inválidos! Apenas números não negativos são permitidos." e pedir para inserir novamente. | 1. Inserir "dez" como pontos de fidelidade. <br> 2. Verificar a mensagem de erro exibida. |
+
+
+
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/aa8bc702-7200-4c29-921c-1c7c9ddd0d12">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/32ebaa97-0c9b-4e02-abd6-d0b143fa1b62">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5d804f8e-742d-479e-92b2-ecf808287ac0">
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/4007c055-c43b-4e0d-9ff9-a27ffc4de7b5">
+</div>
+
+
+
+
+
 # Considerações Adicionais
 
 O desenvolvimento do sistema de gerenciamento para a companhia aérea **Voo Seguro** aborda um problema real que a empresa enfrenta atualmente. A gestão de voos, reservas e tripulação feita manualmente em planilhas e cadernos tem gerado uma série de complicações, como reservas duplicadas, falta de controle sobre a disponibilidade de voos e assentos, além de dificuldades na comunicação entre os membros da tripulação. Esses problemas não apenas afetam a eficiência operacional da companhia, mas também impactam negativamente a experiência do passageiro.
