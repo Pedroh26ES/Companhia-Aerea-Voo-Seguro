@@ -1,4 +1,4 @@
-# Trabalho Interdisciplinar - Companhia Aérea Voo Seguro
+# Trabalho Interdisciplinar - Companhia Aérea Voo Seguro | TOPFLY
 ### Pontifícia Universidade Católica de Minas Gerais 
 ### Unidade - Coração Eucarístico
 ### Desenvolvedores: Pedro Henrique Roldão, Joao Vitor Russo, Bryan Breder, Davi Nunes
@@ -11,7 +11,7 @@
 
 ## 1. Introdução 
 
-A Voo Seguro precisa de um sistema que transforme seu caos administrativo em organização digital. Então para resolver isso desenvolvemos um software para eliminar problemas como reservas duplicadas, falta de controle sobre disponibilidade de voos e assentos, e desorganização no registro de informações. Ao centralizar dados de passageiros (incluindo informações pessoais e de fidelidade), tripulação (com detalhes profissionais), voos (com características completas) e reservas, o sistema promoverá maior eficiência operacional.
+A Voo Seguro precisa de um sistema que transforme seu caos administrativo em organização digital. Então para resolver isso desenvolvemos um software (TOP FLY) para eliminar problemas como reservas duplicadas, falta de controle sobre disponibilidade de voos e assentos, e desorganização no registro de informações. Ao centralizar dados de passageiros (incluindo informações pessoais e de fidelidade), tripulação (com detalhes profissionais), voos (com características completas) e reservas, o sistema promoverá maior eficiência operacional.
 
 
 ## Backlog do produto
