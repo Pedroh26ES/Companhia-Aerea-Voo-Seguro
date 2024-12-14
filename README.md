@@ -265,73 +265,73 @@ Backlog do produto:
 
 # Casos de Teste - Validação de Entrada
 
-## Caso de Teste 8: Testar Nome com Números
+## Caso de Teste: Testar Nome com Números
 
 | ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
 |---------------------|---------------------------------|------------|--------------------|----------------------|
 | TC09                | Validar se o nome contém apenas letras e espaços | "João123"  | O programa deve retornar um erro dizendo "Nome inválido! Apenas letras e espaços são permitidos." e pedir para inserir novamente. | 1. Inserir "João123" como nome. <br> 2. Verificar a mensagem de erro exibida. |
 
-## Caso de Teste 9: Testar País com Números
+## Caso de Teste: Testar País com Números
 
 | ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
 |---------------------|---------------------------------|------------|--------------------|----------------------|
 | TC10                | Validar se o país contém apenas letras e espaços | "Brasil123" | O programa deve retornar um erro dizendo "País inválido! Apenas letras e espaços são permitidos." e pedir para inserir novamente. | 1. Inserir "Brasil123" como país. <br> 2. Verificar a mensagem de erro exibida. |
 
-## Caso de Teste 10: Testar País com Caracteres Especiais
+## Caso de Teste: Testar País com Caracteres Especiais
 
 | ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
 |---------------------|---------------------------------|------------|--------------------|----------------------|
 | TC11                | Validar se o país contém apenas letras e espaços | "Br@sil"    | O programa deve retornar um erro dizendo "País inválido! Apenas letras e espaços são permitidos." e pedir para inserir novamente. | 1. Inserir "Br@sil" como país. <br> 2. Verificar a mensagem de erro exibida. |
 
-## Caso de Teste 11: Testar Cidade com Números
+## Caso de Teste: Testar Cidade com Números
 
 | ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
 |---------------------|---------------------------------|------------|--------------------|----------------------|
 | TC12                | Validar se a cidade contém apenas letras e espaços | "São Paulo 123" | O programa deve retornar um erro dizendo "Cidade inválida! Apenas letras e espaços são permitidos." e pedir para inserir novamente. | 1. Inserir "São Paulo 123" como cidade. <br> 2. Verificar a mensagem de erro exibida. |
 
-## Caso de Teste 12: Testar Rua com Apenas Letras
+## Caso de Teste: Testar Rua com Apenas Letras
 
 | ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
 |---------------------|---------------------------------|------------|--------------------|----------------------|
 | TC13                | Validar se a rua contém letras e números | "Rua A"     | O programa deve retornar um erro dizendo "Rua inválida! A rua deve conter números e letras." e pedir para inserir novamente. | 1. Inserir "Rua A" como rua. <br> 2. Verificar a mensagem de erro exibida. |
 
-## Caso de Teste 13: Testar Número de Casa Negativo
+## Caso de Teste: Testar Número de Casa Negativo
 
 | ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
 |---------------------|---------------------------------|------------|--------------------|----------------------|
 | TC14                | Validar se o número da casa é positivo | "-10"      | O programa deve retornar um erro dizendo "Número da casa inválido! O número deve ser positivo." e pedir para inserir novamente. | 1. Inserir "-10" como número da casa. <br> 2. Verificar a mensagem de erro exibida. |
 
-## Caso de Teste 14: Testar Número de Casa com Letras
+## Caso de Teste: Testar Número de Casa com Letras
 
 | ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
 |---------------------|---------------------------------|------------|--------------------|----------------------|
 | TC15                | Validar se o número da casa contém apenas números | "10A"      | O programa deve retornar um erro dizendo "Número da casa inválido! O número deve ser positivo." e pedir para inserir novamente. | 1. Inserir "10A" como número da casa. <br> 2. Verificar a mensagem de erro exibida. |
 
-## Caso de Teste 15: Testar Telefone com Letras
+## Caso de Teste: Testar Telefone com Letras
 
 | ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
 |---------------------|---------------------------------|------------|--------------------|----------------------|
 | TC16                | Validar se o telefone contém apenas números | "123AB45678" | O programa deve retornar um erro dizendo "Telefone inválido! Apenas números são permitidos." e pedir para inserir novamente. | 1. Inserir "123AB45678" como telefone. <br> 2. Verificar a mensagem de erro exibida. |
 
-## Caso de Teste 16: Testar Telefone com Número Negativo
+## Caso de Teste: Testar Telefone com Número Negativo
 
 | ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
 |---------------------|---------------------------------|------------|--------------------|----------------------|
 | TC17                | Validar se o telefone contém apenas números positivos | "-123456789" | O programa deve retornar um erro dizendo "Telefone inválido! Apenas números são permitidos." e pedir para inserir novamente. | 1. Inserir "-123456789" como telefone. <br> 2. Verificar a mensagem de erro exibida. |
 
-## Caso de Teste 17: Testar Fidelidade com Resposta Errada
+## Caso de Teste: Testar Fidelidade com Resposta Errada
 
 | ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
 |---------------------|---------------------------------|------------|--------------------|----------------------|
 | TC18                | Validar se a resposta de fidelidade é "S" ou "N" | "X"        | O programa deve retornar um erro dizendo "Entrada inválida! Digite apenas 'S' ou 'N'." e pedir para inserir novamente. | 1. Inserir "X" como resposta de fidelidade. <br> 2. Verificar a mensagem de erro exibida. |
 
-## Caso de Teste 18: Testar Pontos de Fidelidade Negativos
+## Caso de Teste: Testar Pontos de Fidelidade Negativos
 
 | ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
 |---------------------|---------------------------------|------------|--------------------|----------------------|
 | TC19                | Validar se os pontos de fidelidade são números não negativos | "-10"      | O programa deve retornar um erro dizendo "Pontos inválidos! Apenas números não negativos são permitidos." e pedir para inserir novamente. | 1. Inserir "-10" como pontos de fidelidade. <br> 2. Verificar a mensagem de erro exibida. |
 
-## Caso de Teste 19: Testar Pontos de Fidelidade com Letras
+## Caso de Teste: Testar Pontos de Fidelidade com Letras
 
 | ID do Caso de Teste | Descrição                       | Entrada    | Resultado Esperado | Passos para Execução | 
 |---------------------|---------------------------------|------------|--------------------|----------------------|
@@ -361,10 +361,6 @@ Backlog do produto:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/4007c055-c43b-4e0d-9ff9-a27ffc4de7b5">
 </div>
-
-
-
-
 
 # Considerações Adicionais
 
