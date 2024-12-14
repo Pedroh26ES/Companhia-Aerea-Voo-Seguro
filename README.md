@@ -47,6 +47,77 @@ Backlog do produto:
  <img src = "https://github.com/user-attachments/assets/55eb7bea-4a9e-4bc7-b2b2-050d9137f337" >
  </div>
  
+# Histórias de Usuário - TOPFLY
+
+## História de Usuário: Reserva de Assento
+**Como passageiro,**  
+Quero reservar um assento em um voo ativo,  
+Para que eu possa garantir meu lugar no voo.
+
+### Critérios de Aceitação:
+- O sistema deve verificar se o voo está ativo e se o assento está disponível antes de permitir a reserva.
+- O sistema deve garantir que o assento escolhido não esteja reservado por outro passageiro.
+- Após a reserva, o status do assento deve ser alterado para "ocupado".
+- O sistema deve associar a reserva ao código do passageiro e ao código do voo.
+
+---
+
+## História de Usuário: Baixa de Reserva
+**Como passageiro,**  
+Quero cancelar minha reserva,  
+Para que eu possa liberar o assento e garantir que não seja cobrada pela tarifa, se aplicável.
+
+### Critérios de Aceitação:
+- O sistema deve permitir o cancelamento de uma reserva.
+- O sistema deve liberar o assento e atualizar seu status para "livre".
+- O sistema deve recalcular a tarifa, se necessário, e registrar a baixa da reserva.
+
+---
+
+## História de Usuário: Pesquisa de Passageiro
+**Como administrador,**  
+Quero buscar informações sobre um passageiro,  
+Para que eu possa encontrar rapidamente o cadastro de um passageiro pelo nome ou código.
+
+### Critérios de Aceitação:
+- O sistema deve permitir a pesquisa de passageiros usando o nome ou código.
+- A pesquisa deve retornar todos os dados do passageiro, incluindo código, nome, telefone, pontos de fidelidade, etc.
+
+---
+
+## História de Usuário: Piloto
+**Como piloto,**  
+Quero visualizar informações detalhadas sobre o voo, como a rota, dados do voo (hora, origem, destino) e o status do voo,  
+Para que eu possa realizar a navegação e garantir que o voo seja realizado de forma segura e eficiente.
+
+### Critérios de Aceitação:
+- O sistema deve permitir que o piloto visualize os detalhes do voo: hora, origem, destino e status do voo (ativo/inativo).
+- O piloto deve ter acesso às informações sobre o copiloto e o comissário de bordo, para coordenar as operações durante o voo.
+
+---
+
+## História de Usuário: Copiloto
+**Como copiloto,**  
+Quero visualizar as mesmas informações que o piloto, incluindo a rota, a condição da aeronave e o status do voo,  
+Para que eu possa colaborar com o piloto na operação segura do voo e assumir o controle, se necessário.
+
+### Critérios de Aceitação:
+- O sistema deve permitir que o copiloto tenha acesso às mesmas informações que o piloto sobre o voo.
+- O copiloto deve ser capaz de visualizar o status da aeronave e fazer sugestões sobre mudanças necessárias no voo, se houver.
+- O copiloto deve poder assumir o controle da aeronave, caso o piloto não consiga continuar com a operação do voo (em emergências ou ausências).
+
+---
+
+## História de Usuário: Comissário de Bordo
+**Como comissário de bordo,**  
+Quero acessar informações sobre os passageiros e o voo,  
+Para que eu possa garantir a segurança, conforto e bem-estar dos passageiros durante o voo.
+
+### Critérios de Aceitação:
+- O sistema deve permitir que o comissário de bordo visualize a lista de passageiros a bordo, com detalhes como nome, assento e qualquer informação especial (ex.: necessidades de assistência, passageiros com restrições alimentares).
+- O comissário deve ser capaz de acessar informações sobre o voo, como a origem, destino, horário de partida e chegada, condições meteorológicas e status do voo (ativo, em andamento, ou em atraso).
+- O sistema deve permitir ao comissário visualizar qualquer alerta relacionado à segurança dos passageiros, como evacuação ou situações de emergência.
+
 
 # Documentação das Funções
 
