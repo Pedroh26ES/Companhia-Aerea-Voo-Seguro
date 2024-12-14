@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1734135257 source:c:\users\phtec\desktop\teste\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+	<locale.h>
+	<assert.h>
+
